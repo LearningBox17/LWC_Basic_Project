@@ -2,4 +2,9 @@
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    background-color: antiquewhite;
+    color: black;
+    padding-left: 5%;
+    margin-bottom: 5%;
 }
+

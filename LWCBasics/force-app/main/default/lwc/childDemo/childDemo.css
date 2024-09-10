@@ -1,0 +1,11 @@
+:host{
+   
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: aqua;
+        padding-left: 5%;
+        background-color: blue;
+        display: block;
+      
+       }
