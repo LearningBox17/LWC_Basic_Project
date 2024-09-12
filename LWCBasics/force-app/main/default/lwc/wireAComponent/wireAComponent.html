@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-var-p-top_small">
+    <lightning-card title="Wire Service Presentation">
+        <div class="slds-var-p-around_small">
+            <lightning-combobox
+            name="Accounts"
+            label="Account Filter"
+            value={accId}
+            placeholder="Select any Account"
+            options={accData}
+            onchange={onSelection} ></lightning-combobox>
+    </div>
+    <lightning-datatable data={wiredData.data} columns={columns} key-field="Id"></lightning-datatable>
+    </lightning-card>
+</div>
+</template>
