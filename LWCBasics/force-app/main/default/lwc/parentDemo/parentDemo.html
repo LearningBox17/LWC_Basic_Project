@@ -1,8 +1,10 @@
 <template>
+    <lightning-card>
     <h1 class="abc">This is parent component</h1>
-    <c-child-demo pub-property="update string property in child component"></c-child-demo><br/>
+    <c-child-demo pub-property="update string property in child component using @api"></c-child-demo><br/>
 
     <h1 style="margin-left: 10%; font-size:medium; font-weight:bold">Below Buttons are for Track Decorator</h1>
   <div style="margin-left: 8%;" class="slds-var-p-around_small"> <lightning-button-group><lightning-button label="updateReactiveArray" variant="brand" onclick={updateReactiveArray}></lightning-button><lightning-button label="updateNonReactiveArray" onclick={updateNonReactiveArray}></lightning-button></lightning-button-group></div> <br/>
   <div style="font-size:medium;margin-left: 8%;font-weight:bold">ReactiveArray: {reactiveArray}  NonReactiveArray: {nonReactiveArray}</div>
+</lightning-card>
 </template>
