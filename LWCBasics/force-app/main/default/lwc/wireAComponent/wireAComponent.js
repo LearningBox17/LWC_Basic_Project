@@ -22,6 +22,12 @@ error;
         }
 onSelection(event){
     this.accId = event.target.value;
+    const evt = new CustomEvent('selectedaccountId',{
+        detail:{
+            accId: this.accId
+        }
+    });
+    this.dispatchEvent(evt);
 }
     @wire(getwireddata,{accId:'$accId'}) wiredData;
 

@@ -5,4 +5,22 @@
     <targets>
         <target>lightning__AppPage</target>
     </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage">
+        <event name="selectedaccountId" label="Item Selected" description="This event fires when an item is selected.">
+            <schema>
+              {
+                "type": "object",
+                "properties": {
+                  "accId": {
+                    "type": "string",
+                    "title": "Record ID",
+                    "description": "Enter an 18-digit record ID."
+              }
+                }
+              }
+            </schema>
+          </event>
+        </targetConfig>
+      </targetConfigs>
 </LightningComponentBundle>
