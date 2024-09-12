@@ -48,14 +48,14 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>wireAComponent</componentName>
-                <identifier>c_wireAComponent</identifier>
+                <componentName>webComponentB</componentName>
+                <identifier>c_webComponentB</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
             <componentInstance>
-                <componentName>webComponentB</componentName>
-                <identifier>c_webComponentB</identifier>
+                <componentName>wireAComponent</componentName>
+                <identifier>c_wireAComponent</identifier>
             </componentInstance>
         </itemInstances>
         <name>region4</name>
