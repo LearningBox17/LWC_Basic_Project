@@ -32,14 +32,20 @@
                 <identifier>c_parentDemo</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>dynamicInstantiationDemo</componentName>
+                <identifier>c_dynamicInstantiationDemo</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>region2</name>
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>dynamicInstantiationDemo</componentName>
-                <identifier>c_dynamicInstantiationDemo</identifier>
+                <componentName>messageReceiver_LMS</componentName>
+                <identifier>c_messageReceiver_LMS</identifier>
             </componentInstance>
         </itemInstances>
         <name>region3</name>
