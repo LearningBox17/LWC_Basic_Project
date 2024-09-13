@@ -1,11 +1,13 @@
 import { LightningElement, wire } from 'lwc';
 import getwireddata from '@salesforce/apex/WiredClass.getwireddata';
-
+import button_clicked from '@salesforce/messageChannel/button_clicked__c';
+import { publish, MessageContext } from 'lightning/messageService';
 import getAccData from '@salesforce/apex/WiredClass.getAccData';
 export default class WireAComponent extends LightningElement {
 accId='';
 accData=[];
 error;
+@wire(MessageContext) info;
     @wire(getAccData) wiretest({error, data}){
         this.accData=[];
         if(data){
@@ -28,8 +30,16 @@ onSelection(event){
         }
     });
     this.dispatchEvent(evt);
+
+    const obj={
+        msg: 'Information through MessageService',
+        accId: this.accId
+       
+    };
+    publish(this.info, button_clicked, {information:obj});
 }
     @wire(getwireddata,{accId:'$accId'}) wiredData;
 
     columns=[{label:'Name', type:'text', fieldName: 'Name'}];
+
 }
