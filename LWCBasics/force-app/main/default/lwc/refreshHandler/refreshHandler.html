@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+    <template for:each={opportunities} for:item="opty">
+        <div class="slds-m-around_medium" key={opty.Id}>
+        <ul >
+                     <li>{opty.Name}</li>
+                    <li>{opty.StageName}</li>
+                </ul>
+            </div>
+        </template>
+        </lightning-card>
+       
+  
+</template>
