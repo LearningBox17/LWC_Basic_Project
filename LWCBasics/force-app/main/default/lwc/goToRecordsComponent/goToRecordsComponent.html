@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="getRecords Example">
+        <h1 class="slds-var-p-around_small" style="color: blue; font-size:large"> <template for:each={resultData} for:item="record">
+            <p key={record.recordId}>{record.name}</p>
+          </template></h1>
+         
+    </lightning-card>
+</template>
