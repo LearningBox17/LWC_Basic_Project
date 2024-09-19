@@ -22,6 +22,12 @@
         </targets>
     </events>
     <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentName>graphGqlComponent</componentName>
+                <identifier>c_graphGqlComponent</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>region1</name>
         <type>Region</type>
     </flexiPageRegions>
@@ -44,8 +50,20 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>messageReceiver_LMS</componentName>
-                <identifier>c_messageReceiver_LMS</identifier>
+                <componentName>goToRecordsComponent</componentName>
+                <identifier>c_goToRecordsComponent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>goToRecordComponent</componentName>
+                <identifier>c_goToRecordComponent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>refreshContainer</componentName>
+                <identifier>c_refreshContainer</identifier>
             </componentInstance>
         </itemInstances>
         <name>region3</name>
@@ -62,6 +80,12 @@
             <componentInstance>
                 <componentName>wireAComponent</componentName>
                 <identifier>c_wireAComponent</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>messageReceiver_LMS</componentName>
+                <identifier>c_messageReceiver_LMS</identifier>
             </componentInstance>
         </itemInstances>
         <name>region4</name>

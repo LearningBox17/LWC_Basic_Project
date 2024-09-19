@@ -1,0 +1,19 @@
+<!-- simpleAccounts.html -->
+<template>
+    <div class="slds-var-m-horizontal_medium">
+      
+        <lightning-card title="GraphGQL Presentation"  icon-name="standard:opportunity" lwc:if={results}>
+        <template for:each={results} for:item="opportunity">
+                   <div key={opportunity.Id} class="slds-grid slds-var-m-vertical_small">
+                        <div class="slds-col" > {opportunity.Name.value}</div>
+                        <div class="slds-col"> {opportunity.Amount.value}</div>
+                        <div class="slds-col"> {opportunity.StageName.value}</div>
+                        <div class="slds-col"> {opportunity.Type.value}</div>
+                        <div class="slds-col"> {opportunity.CloseDate.value}</div>
+                    </div>
+           
+     
+        </template>
+    </lightning-card>
+</div>
+  </template>
